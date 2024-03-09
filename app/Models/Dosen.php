@@ -5,12 +5,14 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Wali extends Model
+class Dosen extends Model
 {
     use HasFactory;
 
+    protected $filllable = ['nama', 'nipd'];
+
     public function mahasiswa()
     {
-        return $this->belongsTo('App\Models\Mahasiswa', 'id_mahasiswa');
+        return $this->hasMany('App\Models\Mahasiswa', 'id_dosen');
     }
 }
