@@ -7,6 +7,14 @@
 ```sh
 git clone -b tugas-2 https://github.com/riyanada/web-tech.git
 ```
+### Tugas 3
+```sh
+git clone -b tugas-3 https://github.com/riyanada/web-tech.git
+```
+### Tugas 4
+```sh
+git clone -b tugas-4 https://github.com/riyanada/web-tech.git
+```
 
 ## Link deploy
 -
