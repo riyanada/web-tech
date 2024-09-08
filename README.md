@@ -1,23 +1,65 @@
-# Kumpulan Tugas Teknologi Web 2.0
+# E-Libs Electronic Library
 
-## D112121062 -  Riyan
+## Tech
 
-## Clone Repository 
-### Tugas 2
-```sh
-git clone -b tugas-2 https://github.com/riyanada/web-tech.git
-```
-### Tugas 3
-```sh
-git clone -b tugas-3 https://github.com/riyanada/web-tech.git
-```
-### Tugas 4
-```sh
-git clone -b tugas-4 https://github.com/riyanada/web-tech.git
-```
+-   Inertia React
+-   Laravel 10
 
-## Link deploy
--
+## Instalasi
 
-## Link Demo
--
+-   Download atau clone repository ini
+
+    ```bash
+     git clone -b uas https://github.com/riyanada/web-tech.git
+    ```
+
+-   Instal dependencies inertia react
+
+    ```bash
+    npm install
+    ```
+
+-   Instal juga dependencies untuk laravel
+
+    ```bash
+    composer install
+    ```
+
+-   Copy `.env.example` dan rename menjadi `.env`
+-   Sesuaikan nama database pada file `.env`
+
+    ```bash
+    DB_DATABASE=e_libs
+    ```
+
+-   Generete app key
+
+    ```bash
+    php artisan key:generate
+    ```
+
+-   Jalankan migrations database, ketik `yes` jika belum memiliki database pada mysql
+
+    ```bash
+    php artisan migrate
+    ```
+
+-   Jalankan seeder
+
+    ```bash
+    php artisan db:seed
+    ```
+
+-   Langkah terakhir untuk menjalankannya di localhost, jalankan server untuk inertia react
+
+    ```bash
+    npm run dev
+    ```
+
+-   Buka terminal baru dan jalankan server laravel
+
+    ```bash
+    php artisan serve
+    ```
+
+-   Buka localhost:8000, dan login menggunakan email: `admin@gmail.com` password: `admin123`
