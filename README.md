@@ -10,7 +10,7 @@
 -   Download atau clone repository ini
 
     ```bash
-     git clone -b uas https://github.com/riyanada/web-tech.git
+     git clone -b UAS https://github.com/riyanada/web-tech.git
     ```
 
 -   Instal dependencies inertia react
